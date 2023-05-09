@@ -1,5 +1,10 @@
 .row{
-    max-width: $grid-width;
+    display: flex;
+    // gap: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    
+
     // margin: 0 auto;
 
     &:not(:last-child){
@@ -10,9 +15,10 @@
 
     [class^="col-"]{
         float: left;
+        width: 100%;
 
         &:not(:last-child){
-            margin-right: $grid-horizontal;
+            margin-right: 6rem;
         }
     }
 

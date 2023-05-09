@@ -9,8 +9,20 @@
          &::after{
              background-color:$color-white;
          }
-     }
+    }
+
+    &--green{
+        background-color:$color-primary;
+        color:$color-white;
+        padding: 1.5rem 4rem;   
+        
+        &::after{
+            background-color:$color-primary;
+        }
+    }
  
+
+
     &:hover {
      transform: translateY(-3px);
      box-shadow: 0 1rem 2rem rgba($color-black, .2);
@@ -24,7 +36,7 @@
     &:active{
          transform: translateY(-1rem);
          box-shadow: 0 .5rem 1px rgba($color-black, .2);
-     }
+    }
  
     &:link,
     &:visited{
@@ -36,7 +48,10 @@
          transform: all .2s;  
          position: relative;   
          font-size: $defaul-font-size;
-     }
+    }
+
+
+    
  
     &::after{
          content: "";
