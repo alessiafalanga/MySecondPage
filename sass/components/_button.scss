@@ -12,10 +12,13 @@
     }
 
     &--green{
+        color: white;
         background-color:$color-primary;
-        color:$color-white;
         padding: 1.5rem 4rem;   
         
+        
+
+
         &::after{
             background-color:$color-primary;
         }
@@ -44,7 +47,6 @@
     &:link,
     &:visited{
          text-transform: uppercase;
-         color: white;
          text-decoration: none;
          border-radius: 10rem;
          display: inline-block;
