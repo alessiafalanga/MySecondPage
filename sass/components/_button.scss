@@ -33,21 +33,32 @@
          }
      }
  
-    &:active{
+    &:active,
+    &:focus {
+        outline:none;
          transform: translateY(-1rem);
          box-shadow: 0 .5rem 1px rgba($color-black, .2);
     }
  
+    &,
     &:link,
     &:visited{
          text-transform: uppercase;
-         color: $color-gray-dark;
+         color: white;
          text-decoration: none;
          border-radius: 10rem;
          display: inline-block;
          transform: all .2s;  
          position: relative;   
          font-size: $defaul-font-size;
+         ;
+
+         
+
+         //change for the <button> element
+         border: none;
+         cursor:pointer;
+         
     }
 
 
