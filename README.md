@@ -1,4 +1,4 @@
-# MyFirstPage🔐
+# MySecondPage🔐
 In this repository there is my second website realised during "Advanced CSS and Sass: Flexbox, Grid, Animations and More!" course by Jonas Schmedtmann for Udemy
 
 
