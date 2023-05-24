@@ -4,7 +4,7 @@ body{
     font-weight: 400;
     line-height: 1.7;
     color:$color-gray-dark;
-    padding:3rem;
+    
 }
 
 
@@ -13,6 +13,7 @@ body{
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem ;
+
 
     
     &--main{
@@ -24,6 +25,14 @@ body{
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        
+        }
+
+
     }
 
     &--sub{
@@ -35,6 +44,10 @@ body{
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+        }
     }
 }    
 
@@ -50,6 +63,14 @@ body{
     letter-spacing: .2rem;
     transform: all .2s;
 
+    @include respond (tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond (phone){
+        font-size: 2.5rem;
+    }
+
     &:hover{
         transform: skewY(2deg) skewX(8deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color: #000000, $alpha: .4)
@@ -60,6 +81,14 @@ body{
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond (tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond (phone){
+        font-size: 2.5rem;
+    }
 }
 
 .paragraph{
@@ -67,6 +96,14 @@ body{
     margin: 1.5rem;
     &:not(:last-child){
         margin-bottom: 3rem;
+    }
+
+    @include respond (tab-port){
+        font-size: 3rem;
+    }
+
+    @include respond (phone){
+        font-size: 2.5rem;
     }
 
 }
